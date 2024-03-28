@@ -41,9 +41,9 @@ public class TestController {
         return "test_login";
     }
     
-    @RequestMapping(value = "/test_signup", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/test_signup", method = RequestMethod.GET)
     public String signup() {
         return "signup";
-    }
+    }*/
 
 }

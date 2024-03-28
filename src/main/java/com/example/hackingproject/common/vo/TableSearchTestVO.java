@@ -1,5 +1,3 @@
-package com.example.hackingproject.common.vo;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,17 +6,15 @@ import lombok.Setter;
 public class TableSearchTestVO {
 	private String searchKeyword;
 	private String title;
-	}
-    
-    public TableSearchTestVO(){
 
-    }
-    
-    public TableSearchTestVO(TableSearchTestVO tableSearchTestVO, String keyword){
-        keyword = tableSearchTestVO.getSearchKeyword();
-    	
-    	currentPage = tableSearchTestVO.getCurrentPage();
-        pageMaxCount = tableSearchTestVO.getPageMaxCount();
-        System.out.println(keyword);
-    }
+	public TableSearchTestVO() {
+
+	}
+
+	public TableSearchTestVO(TableSearchTestVO tableSearchTestVO, String keyword) {
+		this.searchKeyword = tableSearchTestVO.getSearchKeyword();
+		this.title = tableSearchTestVO.getTitle();
+
+		System.out.println(keyword);
+	}
 }
